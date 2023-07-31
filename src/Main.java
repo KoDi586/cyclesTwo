@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-//        task1();
-//        task2();
-//        task3();
+        task1();
+        task2();
+        task3();
         task4();
-//        task5();
-//        task6();
-//        task7();
-//        task8();
+        task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -70,6 +70,83 @@ public class Main {
                 "=============================\n");
 
 
-    }
-}
+        int total = 15_000;
+        float percent = 1.07f;
+        int month = 1;
 
+        for (; total <= 12_000_000; month++) {
+            total *= percent;
+            System.out.println("Месяц " + month + ", накопления составляют " + total);
+        }
+    }
+
+    public static void task5() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 5 =========\n" +
+                "=============================\n");
+
+        int total = 15_000;
+        float percent = 1.07f;
+        int month = 1;
+
+        for (; total <= 12_000_000; month++) {
+            total *= percent;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", накопления составляют " + total);
+            }
+
+        }
+    }
+
+    public static void task6() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 6 =========\n" +
+                "=============================\n");
+
+        int total = 15_000;
+        float percent = 1.07f;
+        int month = 1;
+        int finishMonth = 12 * 9;
+
+        for (; month <= finishMonth; month++) {
+            total *= percent;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", накопления составляют " + total);
+            }
+
+        }
+    }
+
+    public static void task7() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 7 =========\n" +
+                "=============================\n");
+
+        int Friday = 3;
+        int finishDay = 31;
+
+        for (; Friday <= finishDay; Friday+=7) {
+            System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо подготовить отчет.");
+        }
+
+    }
+    public static void task8() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 8 =========\n" +
+                "=============================\n");
+
+        int oldYear = 2023 - 200;
+        int finishYear = 2023 + 100;
+        int firstFly = oldYear - oldYear % 79 + 79;
+
+        for (; firstFly <= finishYear; firstFly += 79) {
+            System.out.println(firstFly);
+        }
+    }
+
+
+}
