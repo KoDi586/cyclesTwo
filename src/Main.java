@@ -44,7 +44,6 @@ public class Main {
             System.out.print(num + " ");
         }
     }
-
     public static void task3() {
         System.out.println("\n\n" +
                 "=============================\n" +
