@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
 //        task1();
 //        task2();
-        task3();
-//        task4();
+//        task3();
+        task4();
 //        task5();
 //        task6();
 //        task7();
@@ -61,6 +61,15 @@ public class Main {
             total = total + birth - dead;
             System.out.println("Год " + year + ", численность населения составляет " + total);
         }
+    }
+
+    public static void task4() {
+        System.out.println("\n\n" +
+                "=============================\n" +
+                "========= Задание 4 =========\n" +
+                "=============================\n");
+
+
     }
 }
 
