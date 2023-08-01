@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
+//        task1();
+//        task2();
+//        task3();
         task4();
-        task5();
-        task6();
-        task7();
-        task8();
+//        task5();
+//        task6();
+//        task7();
+//        task8();
     }
 
     public static void task1() {
@@ -19,7 +19,8 @@ public class Main {
         int salary = 15_000;
         int total = 0;
         short month = 0;
-        while (total <= 2_459_000){
+        int finishSum = 2_459_000;
+        while (total <= finishSum){
             month++;
             total += salary;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
@@ -38,7 +39,7 @@ public class Main {
             System.out.print(num + " ");
         }
 
-        System.out.println("");
+        System.out.print("\n");
 
         for (; num > 0; num--){
             System.out.print(num + " ");
@@ -50,16 +51,19 @@ public class Main {
                 "========= Задание 3 =========\n" +
                 "=============================\n");
 
-        int birth;
-        int dead;
-        int total = 12_000_000;
-        byte year = 1;
+        double birth;
+        float birthPercent = 17/1000f;
+        double dead;
+        float deadPercent = 8/1000f;
+        double total = 12_000_000;
 
-        for (; year <= 10; year++){
-            dead = total/1000 * 8;
-            birth = total/1000 * 17;
+        byte finishYear = 10;
+
+        for (byte year = 1; year <= finishYear; year++){
+            dead = total * deadPercent;
+            birth = total * birthPercent;
             total = total + birth - dead;
-            System.out.println("Год " + year + ", численность населения составляет " + total);
+            System.out.println("Год " + year + ", численность населения составляет " + (int) total);
         }
     }
 
@@ -70,13 +74,13 @@ public class Main {
                 "=============================\n");
 
 
-        int total = 15_000;
+        double total = 15_000d;
         float percent = 1.07f;
-        int month = 1;
+        int finish = 12_000_000;
 
-        for (; total <= 12_000_000; month++) {
+        for (int month = 1; total <= finish; month++) {
             total *= percent;
-            System.out.println("Месяц " + month + ", накопления составляют " + total);
+            System.out.println("Месяц " + month + ", накопления составляют " + (int) total);
         }
     }
 
@@ -86,11 +90,11 @@ public class Main {
                 "========= Задание 5 =========\n" +
                 "=============================\n");
 
-        int total = 15_000;
+        double total = 15_000d;
         float percent = 1.07f;
-        int month = 1;
+        int finish = 12_000_000;
 
-        for (; total <= 12_000_000; month++) {
+        for (int month = 1; total <= finish; month++) {
             total *= percent;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", накопления составляют " + total);
@@ -105,12 +109,11 @@ public class Main {
                 "========= Задание 6 =========\n" +
                 "=============================\n");
 
-        int total = 15_000;
+        double total = 15_000d;
         float percent = 1.07f;
-        int month = 1;
         int finishMonth = 12 * 9;
 
-        for (; month <= finishMonth; month++) {
+        for (int month = 1; month <= finishMonth; month++) {
             total *= percent;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", накопления составляют " + total);
@@ -125,10 +128,9 @@ public class Main {
                 "========= Задание 7 =========\n" +
                 "=============================\n");
 
-        int Friday = 3;
         int finishDay = 31;
 
-        for (; Friday <= finishDay; Friday+=7) {
+        for (int Friday = 3; Friday <= finishDay; Friday+=7) {
             System.out.println("Сегодня пятница, " + Friday + "-е число. Необходимо подготовить отчет.");
         }
 
