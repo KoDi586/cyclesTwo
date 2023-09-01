@@ -3,11 +3,12 @@ public class Main {
 //        task1();
 //        task2();
 //        task3();
-        task4();
+//        task4();
 //        task5();
 //        task6();
 //        task7();
 //        task8();
+        task9();
     }
 
     public static void task1() {
@@ -149,6 +150,10 @@ public class Main {
             System.out.println(firstFly);
         }
     }
+    public static void task9() {
+        System.out.println("Изменение");
+    }
+
 
 
 }
